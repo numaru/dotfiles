@@ -1,4 +1,15 @@
 "
+" Plugins settings
+"
+call plug#begin()
+
+Plug 'rakr/vim-one'
+
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
+"
 " Vim settings
 "
 
@@ -29,6 +40,15 @@ set autoindent
 " I always use dark terminal
 set background=dark
 
+" Use the one color scheme
+colorscheme one
+
+" Use the theme for vim airline as well
+let g:airline_theme='one'
+
+" Use true colors
+set termguicolors
+
 " Highlight the current line
 set cursorline
 
@@ -37,3 +57,4 @@ set mouse=a
 
 " Enable syntax highlighting
 syntax on
+
